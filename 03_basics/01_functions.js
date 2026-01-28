@@ -11,24 +11,21 @@ function sayMyName(){
 // sayMyName()
 
 // function addTwoNumbers(number1, number2){
-
 //     console.log(number1 + number2);
 // }
 
 function addTwoNumbers(number1, number2){
-
     // let result = number1 + number2
     // return result
     return number1 + number2
 }
 
 const result = addTwoNumbers(3, 5)
-
 // console.log("Result: ", result);
 
 
 function loginUserMessage(username = "sam"){
-    if(!username){
+    if(!username){ // this means (username === "undefined") 
         console.log("PLease enter a username");
         return
     }
@@ -36,10 +33,8 @@ function loginUserMessage(username = "sam"){
 }
 
 // console.log(loginUserMessage("hitesh"))
-// console.log(loginUserMessage("hitesh"))
 
-
-function calculateCartPrice(val1, val2, ...num1){
+function calculateCartPrice(val1, val2, ...num1){ // ... means rest operator (similar to spread operator)
     return num1
 }
 
