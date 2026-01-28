@@ -54,7 +54,7 @@ users[1].email
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
-
+// Object de-structuring
 const course = {
     coursename: "js in hindi",
     price: "999",
@@ -62,12 +62,12 @@ const course = {
 }
 
 // course.courseInstructor
-
 const {courseInstructor: instructor} = course
-
 // console.log(courseInstructor);
 console.log(instructor);
 
+
+// JSON Object (Java Script Object Notation)
 // {
 //     "name": "hitesh",
 //     "coursename": "js in hindi",
