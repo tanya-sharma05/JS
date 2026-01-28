@@ -4,10 +4,9 @@ if (true) {
     let a = 10
     const b = 20
     // console.log("INNER: ", a);
-    
 }
 
-
+// scope is different in both node and browser
 
 // console.log(a);
 // console.log(b);
@@ -22,9 +21,7 @@ function one(){
         console.log(username);
     }
     // console.log(website);
-
-     two()
-
+    two()
 }
 
 // one()
@@ -49,8 +46,6 @@ console.log(addone(5))
 function addone(num){
     return num + 1
 }
-
-
 
 addTwo(5)
 const addTwo = function(num){
