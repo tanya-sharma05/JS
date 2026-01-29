@@ -7,8 +7,8 @@
 //         break;
 // }
 
-const month = "march"
-
+const month = "march" // data type can be anything
+// switch uses strict comparison (===) 
 switch (month) {
     case "jan":
         console.log("January");
@@ -22,7 +22,6 @@ switch (month) {
     case "april":
         console.log("april");
         break;
-
     default:
         console.log("default case match");
         break;
