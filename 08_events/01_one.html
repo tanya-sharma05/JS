@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>htnml Events </title>
+    <title>html Events </title>
 </head>
 <body style="background-color: #414141; color: aliceblue;">
     <h2>Amazing image</h2>
@@ -18,19 +18,23 @@
         </ul>
    </div>
 </body>
+
+<!-- 
+Some Important methods: 
+    type, timestamp, preventDefault
+    target, toElement, srcElement, currentTarget,
+    clientX, clientY, screenX, screenY
+    altkey, ctrlkey, shiftkey, keyCode 
+-->
 <script>
     // document.getElementById('owl').onclick = function(){
     //     alert("owl clicked")
     // }
 
-     // attachEvent()
-    // jQuery - on
-
-    // type, timestamp, defaultPrevented
-    // target, toElement, srcElement, currentTarget,
-    // clientX, clientY, screenX, screenY
-    // altkey, ctrlkey, shiftkey, keyCode
-
+    // Bubbling: Inner to outer when false is set
+    // Capturing: Outer to inner when true is set
+    // stopPrpagation stops this for further 
+    
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
     // }, false)
@@ -53,11 +57,8 @@
             console.log(e.target.id);
             let removeIt = e.target.parentNode
             removeIt.remove()
-        }
-    
-        
+        } 
     })
-    
     //removeIt.parentNode.removeChild(removeIt)
 </script>
 </html>
