@@ -1,6 +1,8 @@
+// for each loop is used to iterate over arrays and it's values. (it expects a callback function)
+
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
-// coding.forEach( function (val){
+// coding.forEach( function (val){ // remove name of function for callback
 //     console.log(val);
 // } )
 
@@ -34,6 +36,5 @@ const myCoding = [
 ]
 
 myCoding.forEach( (item) => {
-    
     console.log(item.languageName);
 } )
