@@ -174,43 +174,38 @@ function newGame() {
 
 ```
 
-# Project 5 Solution
+# Project 5 (Unlimited Background Colors)
 
 ```javascript
-//generate a random color
-
-const randomColor = function () {
+// Generate a random color
+const randomColor = function(){
   const hex = '0123456789ABCDEF';
   let color = '#';
-  for (let i = 0; i < 6; i++) {
-    color += hex[Math.floor(Math.random() * 16)];
+
+  // index from 1 to 16 will be generated from Math.floor(Math.random()*16)
+  for(let i = 0; i < 6; i++){
+    color += hex[Math.floor(Math.random()*16)];
   }
+
   return color;
-};
+}
 
-let intervalId;
-const startChangingColor = function () {
-  if (!intervalId) {
-    intervalId = setInterval(changeBgColor, 1000);
-  }
+let intervalId; // defined for global scope
 
-  function changeBgColor() {
+document.querySelector('#start').addEventListener('click', function(){
+  console.log("STARTED")
+  intervalId = setInterval( function(){
     document.body.style.backgroundColor = randomColor();
-  }
-};
-const stopChangingColor = function () {
+  }, 1000);
+});
+
+document.querySelector('#stop').addEventListener('click', function(){
+  console.log("STOPPED");
   clearInterval(intervalId);
-  intervalId = null;
-};
-
-document.querySelector('#start').addEventListener('click', startChangingColor);
-
-document.querySelector('#stop').addEventListener('click', stopChangingColor);
-
-
+});
 ```
 
-# Project 5 solution
+# Project 6 (Keyboard)
 
 ```javascript
 const insert = document.getElementById('insert');
