@@ -61,23 +61,21 @@ form.addEventListener( 'submit', function(e){
 });
 ```
 
-## project 3 solution code
+## Project 3 (Digital Clock)
 
 ```javascript
-const clock = document.getElementById('clock');
-// const clock = document.querySelector('#clock')
+const clock = document.querySelector('#clock');
+// const clock = document.getElementById('clock')
 
-setInterval(function () {
+// to update the time for a regular interval, we need setInterval
+setInterval(function(){
   let date = new Date();
   // console.log(date.toLocaleTimeString());
-  clock.innerHTML = date.toLocaleTimeString();
+  clock.innerHTML = `${date.toLocaleTimeString()}`;
 }, 1000);
-
-
 ```
 
-## project 4 solution
-
+## Project 4 (Guess the number game)
 
 ```javascript
 
