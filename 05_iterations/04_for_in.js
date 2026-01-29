@@ -1,3 +1,5 @@
+// for in loop is used for arrays, strings and objects for iterating over values by indexes / keys.
+
 const myObject = {
     js: 'javascript',
     cpp: 'C++',
@@ -15,6 +17,7 @@ for (const key in programming) {
     //console.log(programming[key]);
 }
 
+// does not works on map
 // const map = new Map()
 // map.set('IN', "India")
 // map.set('USA', "United States of America")
