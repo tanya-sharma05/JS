@@ -40,13 +40,13 @@ if (true) {
 
 // ++++++++++++++++++ interesting ++++++++++++++++++
 
-
-console.log(addone(5))
-
-function addone(num){
+// this will work 
+console.log(addOne(5))
+function addOne(num){
     return num + 1
 }
 
+// this will not work as we stored the function in a variable, so variable will be defined first
 addTwo(5)
 const addTwo = function(num){
     return num + 2
