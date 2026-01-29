@@ -4,9 +4,8 @@ const user = {
 
     welcomeMessage: function() {
         console.log(`${this.username} , welcome to website`);
-        console.log(this);
+        console.log(this); // this refers to current context (object's values) 
     }
-
 }
 
 // user.welcomeMessage()
@@ -27,11 +26,11 @@ const user = {
 //     console.log(this.username);
 // }
 
+// Arrow function
 const chai =  () => {
     let username = "hitesh"
     console.log(this);
 }
-
 
 // chai()
 
@@ -39,16 +38,11 @@ const chai =  () => {
 //     return num1 + num2
 // }
 
-// const addTwo = (num1, num2) =>  num1 + num2
+// const addTwo = (num1, num2) =>  num1 + num2 // addTwo is a expression here // hoisting 
 
-// const addTwo = (num1, num2) => ( num1 + num2 )
+// const addTwo = (num1, num2) => ( num1 + num2 ) 
 
+// this is not allowed 
 const addTwo = (num1, num2) => ({username: "hitesh"})
 
-
 console.log(addTwo(3, 4))
-
-
-// const myArray = [2, 5, 3, 7, 8]
-
-// myArray.forEach()
