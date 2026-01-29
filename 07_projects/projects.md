@@ -174,7 +174,7 @@ function newGame() {
 
 ```
 
-# Project 5 (Unlimited Background Colors)
+## Project 5 (Unlimited Background Colors)
 
 ```javascript
 // Generate a random color
@@ -205,7 +205,7 @@ document.querySelector('#stop').addEventListener('click', function(){
 });
 ```
 
-# Project 6 (Keyboard)
+## Project 6 (Keyboard)
 
 ```javascript
 const insert = document.getElementById('insert');
